@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    title: `Aurélien Toussaint`,
+    description: `Web portfolio of Aurélien Toussaint`,
+    author: `@neginoyami`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `Aurélien Toussaint`,
+        short_name: `Aurélien Toussaint`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#9F7AEA`,
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`
       }
@@ -22,8 +22,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
+        whitelist: [`mode-dark`],
         tailwind: true,
-        purgeOnly: [`src/css/style.css`]
+        purgeOnly: [`src/css/style.css`],
       }
     },
     `gatsby-plugin-offline`
