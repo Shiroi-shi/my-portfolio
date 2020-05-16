@@ -3,11 +3,9 @@ import React from "react";
 
 import Header from "./header";
 
+// eslint-disable-next-line no-unused-vars
 function checkDarkMode() {
-    if (window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
-        return true;
-    }
-    return false;
+    return window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches;
 }
 
 function Layout( { location, children }) {
@@ -22,17 +20,17 @@ function Layout( { location, children }) {
     <div className="flex flex-col font-sans min-h-screen text-gray-900 dark:bg-gray-900">
       <Header location={location} />
 
-      <main className="flex flex-col flex-1 max-w-6xl mx-auto px-4 py-8 md:p-8 w-full mt-20">
+      <main className="flex flex-col flex-1 w-full pt-20 pb-10">
         {children}
       </main>
 
       <footer className="bg-purple-700">
-        <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
+        <nav className="flex justify-between container mx-auto px-10 py-4 md:p-8 text-sm">
           <p className="text-white">
             Created by{` `}
             <a
               className="font-bold no-underline text-white"
-              href="https://bryant.io"
+              href="https://aurelientoussaint.me"
             >
               Aurélien Toussaint
             </a>
@@ -59,6 +57,7 @@ function Layout( { location, children }) {
 }
 
 Layout.propTypes = {
+  location: PropTypes.node.isRequired,
   children: PropTypes.node.isRequired
 };
 

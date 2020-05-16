@@ -5,6 +5,7 @@ module.exports = {
     author: `@neginoyami`
   },
   plugins: [
+    "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -15,10 +16,19 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#9F7AEA`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/avatar.jpg`
       }
     },
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`)(`./tailwind.config.js`),
+          require(`autoprefixer`),
+          require(`cssnano`)
+        ]
+      }
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
