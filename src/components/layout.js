@@ -3,21 +3,10 @@ import React from "react";
 
 import Header from "./header";
 
-// eslint-disable-next-line no-unused-vars
-function checkDarkMode() {
-    return window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches;
-}
-
 function Layout( { location, children }) {
-    
-    /*if (checkDarkMode()) {
-        document.documentElement.classList.add(`mode-dark`);
-    } else {
-        document.documentElement.classList.remove(`mode-dark`);
-    }*/
 
   return (
-    <div className="flex flex-col font-sans min-h-screen text-gray-900 dark:bg-gray-900">
+    <div className="flex flex-col font-sans min-h-screen bg-gray-900 text-white">
       <Header location={location} />
 
       <main className="flex flex-col flex-1 w-full pt-20 pb-10">

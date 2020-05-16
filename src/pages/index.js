@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Section from "../components/section";
 import Card from "../components/card";
-import halfBody from "../images/half-body.png";
+import halfBody from "../images/half-body_contour.png";
 import TMO from "../images/the_missing_one.png";
 import TL from "../images/tomorrow_learning.png";
 import Negi from "../images/negi-bot.jpg";
@@ -38,6 +38,13 @@ function IndexPage({location}) {
               experience as a fullstack web developer through several internship and personal experience, I also have
               experience in game programming thanks to a few school projects.
             </p>
+
+            <div className="text-right">
+              <button
+                className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105">
+                View resume 📋
+              </button>
+            </div>
           </div>
           <div className="w-full md:w-1/2 my-8">
             <img

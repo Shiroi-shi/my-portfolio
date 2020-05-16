@@ -1,4 +1,4 @@
-import {graphql, useStaticQuery, Link} from "gatsby";
+import {Link} from "gatsby";
 import React, {useState} from "react";
 
 import avatar from '../images/avatar.jpg';
@@ -7,16 +7,6 @@ import PropTypes from "prop-types";
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
   const [selected, setSelected] = useState(window.location.hash || "#about");
-
-  const {site} = useStaticQuery(graphql`
-      query SiteTitleQuery {
-          site {
-              siteMetadata {
-                  title
-              }
-          }
-      }
-  `);
 
   function doAnchor(id) {
     const elem = document.getElementById(id.replace('#', ''));
@@ -35,24 +25,22 @@ function Header() {
     setSelected(id);
   }
 
-  // TODO: Add switch light/dark theme button
-
   return (
-    <header className="bg-white dark:bg-gray-900 shadow fixed w-full z-50">
+    <header className="bg-purple-700 dark:bg-gray-900 shadow-md fixed w-full z-50">
       <div className="flex flex-wrap items-center justify-between container mx-auto px-10 py-4">
-        <Link className="flex items-center no-underline text-purple-700 dark:text-white" to="/">
+        <Link className="flex items-center no-underline text-white" to="/">
           <img
             alt="Aurélien Toussaint face picture"
             className="w-10 h-10 rounded-full mr-4"
             src={avatar}
           />
           <span className="font-bold text-xl tracking-tight">
-            {site.siteMetadata.title}
+            Aurélien Toussaint
           </span>
         </Link>
 
         <button
-          className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-gray-800 dark:text-white"
+          className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -84,7 +72,7 @@ function Header() {
               title: `Contact`
             }
           ].map(link => (
-            <button className={`block focus:outline-none md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-purple-700 dark:text-white ${selected === link.route ? `font-bold`: `font-medium hover:text-purple-600`}`}
+            <button className={`block focus:outline-none md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white px-4 py-2 ${selected === link.route ? `font-bold rounded-full bg-gray-900`: `font-medium hover:text-gray-900`}`}
                     onClick={() => doAnchor(link.route)} key={link.route}>
               {link.title}
             </button>
