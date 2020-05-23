@@ -12,18 +12,15 @@ import Negi from "../images/negi-bot.jpg";
 import Proxima from "../images/proxima.png";
 import Taiko from "../images/taiko.png";
 
-function setTitle(title) {
-  const newTitle = title.replace('#', '');
-  return newTitle.charAt(0).toUpperCase() + newTitle.slice(1);
-}
-
 function IndexPage({location}) {
 
   return (
     <Layout location={location}>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title={location.hash.includes('#') ? setTitle(location.hash) : `About me`}
+        keywords={[`Aurélien`, `Toussaint`, `Aurélien Toussaint`, `Web`, `Developer`, `web developer`, `front-end`,
+          `frontend`, `front end`, `back-end`, `backend`, `back end`, `full-stack`, `fullstack`, `full stack`, `french`,
+          `개발자`, `웹`, `웹 개발자`, `웹개발자`, `프랑스`]}
+        title={"Portfolio"}
       />
 
       <Section>
@@ -36,13 +33,28 @@ function IndexPage({location}) {
             <p className="leading-loose p-3">
               I am a french developer currently studying programming and in my fifth and last year at Epitech. I have
               experience as a fullstack web developer through several internship and personal experience, I also have
-              experience in game programming thanks to a few school projects.
+              experience in game programming thanks to a few school projects. I lived in Korea for one year to study game programming at Keimyung University
+              thanks to a partnership with my school, here I learned basics of Korean language and I took Korean history and culture classes.
+              I am always curious and interested in learning new things.
             </p>
 
-            <div className="text-right">
+            <div className="text-right mt-4">
               <button
                 className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105">
                 View resume 📋
+              </button>
+            </div>
+
+            <p className="leading-loose p-3 mt-12">
+              저는 프랑스 개발자는 현재 프로그래밍을 공부하고있으며 Epitech에서 다니는 건 올해가 마지막이에요.
+              저는 몇 인턴십하고 내 경험이 덕분에 웹 개발자에 경험이 있어요. 저는 또한 학교 프로젝트 덕분에 게임 프로그래밍 경험이 있어요.
+
+            </p>
+
+            <div className="text-right mt-4">
+              <button
+                className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105">
+                이력서 보다 📋
               </button>
             </div>
           </div>
@@ -111,7 +123,7 @@ function IndexPage({location}) {
 }
 
 IndexPage.propTypes = {
-  location: PropTypes.node.isRequired,
+  location: PropTypes.any.isRequired,
 }
 
 export default IndexPage;

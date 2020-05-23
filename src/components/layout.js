@@ -46,7 +46,7 @@ function Layout( { location, children }) {
 }
 
 Layout.propTypes = {
-  location: PropTypes.node.isRequired,
+  location: PropTypes.any.isRequired,
   children: PropTypes.node.isRequired
 };
 

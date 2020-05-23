@@ -72,7 +72,7 @@ function Header() {
               title: `Contact`
             }
           ].map(link => (
-            <button className={`block focus:outline-none md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white px-4 py-2 ${selected === link.route ? `font-bold rounded-full bg-gray-900`: `font-medium hover:text-gray-900`}`}
+            <button className={`block focus:outline-none md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white px-4 py-2 rounded-full ${selected === link.route ? `font-bold bg-gray-900`: `font-medium hover:bg-gray-900`} transition ease-in-out duration-300`}
                     onClick={() => doAnchor(link.route)} key={link.route}>
               {link.title}
             </button>
@@ -84,7 +84,7 @@ function Header() {
 }
 
 Header.propTypes = {
-  location: PropTypes.node.isRequired,
+  location: PropTypes.any.isRequired,
 }
 
 export default Header;
