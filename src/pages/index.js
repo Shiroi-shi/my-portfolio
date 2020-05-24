@@ -8,6 +8,7 @@ import Card from "../components/card";
 import halfBody from "../images/half-body_contour.png";
 import TMO from "../images/the_missing_one.png";
 import TL from "../images/tomorrow_learning.png";
+import Portfolio from "../images/preview_portfolio.png"
 import Negi from "../images/negi-bot.jpg";
 import Proxima from "../images/proxima.png";
 import Taiko from "../images/taiko.png";
@@ -103,7 +104,7 @@ function IndexPage({location}) {
           <Card img={TL} title={"Tomorrow Learning"} website="https://tomorrowlearning.fr/"
                 desc={"Tomorrow Learning is an online training organization which trains companies in Growth Hacking and Human Resources."}
                 stack={["React", "Gatsby", "TailwindCSS"]}/>
-          <Card title={"My portfolio"} github="https://github.com/Shiroi-shi/my-portfolio"
+          <Card img={Portfolio} title={"My portfolio"} github="https://github.com/Shiroi-shi/my-portfolio"
                 website="https://aurelientoussaint.me"
                 desc={"This is the website you are currently visiting. I made it to make it easier to present myself and show my work."}
                 stack={["React", "Gatsby", "TailwindCSS"]}/>
