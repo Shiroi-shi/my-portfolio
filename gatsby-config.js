@@ -2,11 +2,22 @@ module.exports = {
   siteMetadata: {
     title: `Aurélien Toussaint`,
     description: `Web portfolio of Aurélien Toussaint`,
-    author: `@neginoyami`
+    author: `@neginoyami`,
+    siteUrl: `https://aurelientoussaint.me`,
+    image: `/images/avatar.jpg`
   },
   plugins: [
     "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://aurelientoussaint.me`,
+      },
+    },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,9 +30,6 @@ module.exports = {
         icon: `src/images/avatar.jpg`
       }
     },
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
