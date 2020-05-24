@@ -11,6 +11,7 @@ import TL from "../images/tomorrow_learning.png";
 import Negi from "../images/negi-bot.jpg";
 import Proxima from "../images/proxima.png";
 import Taiko from "../images/taiko.png";
+import Resume from "../images/resume_aurelien_toussaint.pdf";
 
 function IndexPage({location}) {
 
@@ -40,10 +41,12 @@ function IndexPage({location}) {
             </p>
 
             <div className="text-center md:text-right mt-2">
-              <button
-                className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
-                View resume 📋
-              </button>
+              <a href={Resume} target="_blank" rel="noreferrer">
+                <button
+                  className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
+                  View resume 📋
+                </button>
+              </a>
               <a href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110/" target="_blank" rel="noreferrer">
                 <button
                   className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
@@ -60,10 +63,12 @@ function IndexPage({location}) {
             </p>
 
             <div className="text-center md:text-right mt-2">
-              <button
-                className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
-                이력서 보다 📋
-              </button>
+              <a href={Resume} target="_blank" rel="noreferrer">
+                <button
+                  className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
+                  이력서 보다 📋
+                </button>
+              </a>
               <a href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110/" target="_blank" rel="noreferrer">
                 <button
                   className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
