@@ -1,12 +1,17 @@
 import {Link} from "gatsby";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import avatar from '../images/avatar.jpg';
 import PropTypes from "prop-types";
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
-  const [selected, setSelected] = useState(window.location.hash || "#about");
+  const [selected, setSelected] = useState(null);
+
+  useEffect(() => {
+    setSelected(window.location.hash || "#about")
+    doAnchor(window.location.hash || "#about")
+  }, [])
 
   function doAnchor(id) {
     const elem = document.getElementById(id.replace('#', ''));
