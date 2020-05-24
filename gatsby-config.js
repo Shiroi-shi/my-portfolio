@@ -7,7 +7,6 @@ module.exports = {
     image: `/images/avatar.jpg`
   },
   plugins: [
-    "gatsby-plugin-eslint",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
