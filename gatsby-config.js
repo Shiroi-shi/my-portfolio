@@ -19,6 +19,16 @@ module.exports = {
         icon: `src/images/avatar.jpg`
       }
     },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-72062716-2`,
+        head: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

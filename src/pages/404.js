@@ -7,14 +7,14 @@ import abductionIllustration from "../images/abduction-illustration.svg";
 function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="404: Not found" />
-      <div>
+      <SEO title="404 - Not found" />
+      <div className="text-center my-auto mx-4">
         <img
           alt="Ghost getting abducted by aliens"
-          className="block mx-auto w-1/2"
+          className="block mx-auto w-full md:w-1/2"
           src={abductionIllustration}
         />
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
+        <h2 className="text-purple-600 text-2xl font-bold inline-block my-8">
           Looks like this page is a ghost that got abducted by aliens...
         </h2>
       </div>

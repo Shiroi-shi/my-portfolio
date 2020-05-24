@@ -27,14 +27,18 @@ function Layout( { location, children }) {
 
           <p>
               <a
-                  className="font-bold no-underline text-white mr-2"
-                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
+                  className="font-bold no-underline text-white hover:text-gray-900 mr-2"
+                  href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110"
+                  target="_blank"
+                  rel="noreferrer"
               >
                   LinkedIn
               </a>
             <a
-              className="font-bold no-underline text-white"
-              href="https://github.com/taylorbryant/gatsby-starter-tailwind"
+              className="font-bold no-underline text-white hover:text-gray-900"
+              href="https://github.com/Shiroi-shi"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub
             </a>
