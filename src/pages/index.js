@@ -48,7 +48,7 @@ function IndexPage({location}) {
                   View resume 📋
                 </button>
               </a>
-              <a href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/aurelien-toussaint/" target="_blank" rel="noreferrer">
                 <button
                   className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
                   LinkedIn profile 💼
@@ -70,7 +70,7 @@ function IndexPage({location}) {
                   이력서 보다 📋
                 </button>
               </a>
-              <a href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110/" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/aurelien-toussaint/" target="_blank" rel="noreferrer">
                 <button
                   className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
                   LinkedIn 프로필 💼
@@ -144,7 +144,7 @@ function IndexPage({location}) {
             Send email 📧
           </button>
         </a>
-        <a href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/aurelien-toussaint/" target="_blank" rel="noreferrer">
           <button
             className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
             LinkedIn profile 💼

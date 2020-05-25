@@ -28,7 +28,7 @@ function Layout( { location, children }) {
           <p>
               <a
                   className="font-bold no-underline text-white hover:text-gray-900 mr-2"
-                  href="https://www.linkedin.com/in/aur%C3%A9lien-toussaint-3a9418110"
+                  href="https://www.linkedin.com/in/aurelien-toussaint/"
                   target="_blank"
                   rel="noreferrer"
               >
