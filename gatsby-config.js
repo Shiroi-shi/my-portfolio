@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Aurélien Toussaint`,
-    description: `Web portfolio of Aurélien Toussaint`,
+    description: `Aurélien Toussaint is a french full-stack developer specialized in React JS development. Looking for opportunities in South Korea`,
     author: `@neginoyami`,
     siteUrl: `https://aurelientoussaint.me`,
     image: `/images/avatar.jpg`
@@ -24,7 +24,7 @@ module.exports = {
         short_name: `Aurélien Toussaint`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#9F7AEA`,
+        theme_color: `#6b46c1`,
         display: `minimal-ui`,
         icon: `src/images/avatar.jpg`
       }

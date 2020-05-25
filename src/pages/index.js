@@ -19,7 +19,7 @@ function IndexPage({location}) {
   return (
     <Layout location={location}>
       <SEO
-        keywords={[`Aurélien`, `Toussaint`, `Aurélien Toussaint`, `Web`, `Developer`, `web developer`, `front-end`,
+        keywords={[`Aurélien`, `Toussaint`, `Aurélien Toussaint`, `aurelien`, `Web`, `Developer`, `web developer`, `front-end`,
           `frontend`, `front end`, `back-end`, `backend`, `back end`, `full-stack`, `fullstack`, `full stack`, `french`,
           `개발자`, `웹`, `웹 개발자`, `웹개발자`, `프랑스`]}
         title={"Portfolio"}
@@ -28,9 +28,9 @@ function IndexPage({location}) {
       <Section>
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2">
-            <h1 className="text-purple-700 text-4xl font-bold inline-block" id="about">
+            <h2 className="text-purple-700 text-4xl font-bold inline-block" id="about">
               About me - 나에 대해서
-            </h1>
+            </h2>
 
             <p className="leading-loose p-3">
               I am a french developer currently studying programming and in my fifth and last year at Epitech. I have
@@ -89,14 +89,14 @@ function IndexPage({location}) {
       </Section>
 
       <Section>
-        <h1 className="text-purple-700 text-4xl font-bold" id="projects">
+        <h2 className="text-purple-700 text-4xl font-bold" id="projects">
           Projects - 프로젝트
-        </h1>
+        </h2>
         <p className="leading-loose p-3">This is a list of the major projects I worked on by myself or with a team</p>
 
-        <h2 className="text-purple-700 text-3xl font-bold ml-10">
+        <h3 className="text-purple-700 text-3xl font-bold ml-10">
           Websites
-        </h2>
+        </h3>
         <div className="flex flex-wrap">
           <Card img={TMO} title={"The Missing One"} website="https://www.themissingone.io/"
                 desc={"Web platform helping developers and local companies to be in contact with each others."}
@@ -110,9 +110,9 @@ function IndexPage({location}) {
                 stack={["React", "Gatsby", "TailwindCSS"]}/>
         </div>
 
-        <h2 className="text-purple-700 text-3xl font-bold ml-10">
+        <h3 className="text-purple-700 text-3xl font-bold ml-10">
           Games
-        </h2>
+        </h3>
         <div className="flex flex-wrap">
           <Card img={Taiko} title={"TaikoVR"}
                 desc={`A VR rhythm game based on the famous game "Taiko no tatsujin" and using maps from the game "Osu!".It was made with a team of 3 as a school project during my stay at 계명대학교.`}
@@ -122,9 +122,9 @@ function IndexPage({location}) {
                 stack={["Unity3D"]}/>
         </div>
 
-        <h2 className="text-purple-700 text-3xl font-bold ml-10">
+        <h3 className="text-purple-700 text-3xl font-bold ml-10">
           Others
-        </h2>
+        </h3>
         <div className="flex flex-wrap">
           <Card img={Negi} title={"Negi bot"} github="https://github.com/Shiroi-shi/Negi-bot"
                 desc={"A simple discord bot."}
@@ -133,9 +133,9 @@ function IndexPage({location}) {
       </Section>
 
       <Section>
-        <h1 className="text-purple-700 text-4xl font-bold" id="contact">
+        <h2 className="text-purple-700 text-4xl font-bold" id="contact">
           Contact - 연락처
-        </h1>
+        </h2>
         <p className="leading-loose p-3">You can contact me by sending me an email at
           <strong className="font-bold"> neginoyami@gmail.com</strong> or by messaging me on my LinkedIn account</p>
         <a href="mailto:neginoyami@gmail.com">

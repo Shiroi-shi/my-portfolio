@@ -39,9 +39,9 @@ function Header() {
             className="w-10 h-10 rounded-full mr-4"
             src={avatar}
           />
-          <span className="font-bold text-xl tracking-tight">
+          <h1 className="font-bold text-xl tracking-tight">
             Aurélien Toussaint
-          </span>
+          </h1>
         </Link>
 
         <button
