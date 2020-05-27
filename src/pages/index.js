@@ -66,7 +66,7 @@ function IndexPage({location}) {
               <a href={Resume} target="_blank" rel="noreferrer">
                 <button
                   className="bg-purple-700 rounded-full py-2 px-4 font-bold hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105 m-2">
-                  이력서 보다 📋
+                  이력서 보기 📋
                 </button>
               </a>
               <a href="https://www.linkedin.com/in/aurelien-toussaint/" target="_blank" rel="noreferrer">
