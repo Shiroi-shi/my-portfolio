@@ -29,7 +29,7 @@ function IndexPage({location}) {
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2">
             <h2 className="text-purple-700 text-4xl font-bold inline-block" id="about">
-              About me - 나에 대해서
+              About me
             </h2>
 
             <p className="leading-loose p-3">
@@ -57,10 +57,9 @@ function IndexPage({location}) {
             </div>
 
             <p className="leading-loose p-3 mt-12">
-              저는 프랑스 개발자는 현재 프로그래밍을 공부하고있으며 Epitech에서 다니는 건 올해가 마지막이에요.
-              저는 몇 인턴십하고 내 경험이 덕분에 웹 개발자에 경험이 있어요. 저는 또한 학교 프로젝트 덕분에 게임 프로그래밍 경험이 있어요.
-              저는 한국에서 1 년 동안 게임 프로그래밍을 계명대학교에서 (대구) 공부하고 살았다. 한국어, 한국사하고 한국 문화 배웠어요.
-              저는 새로운 것들 궁금한하고 관심있는 배우다.
+              안녕하세요. 저는 프랑스의 개발자입니다! 현재 프로그래밍을 공부하고 있으며 Epitech에서의 마지막 학기를 다니고 있습니다. 저는 인턴십과 여러 경험을 통해 웹 개발에 대한 전반적인 지식을
+              갖추고 있습니다. 또한 학교 프로젝트 덕분에 게임 프로그래밍 경험도 풍부합니다. 저는 대구 계명대학교에서 1년 동안 게임 프로그래밍을 수학했습니다. 한국에서 대학교 생활을 하며 프로그래밍
+              지식뿐만 아니라 한국어, 한국사 및 한국 문화에 대한 지식까지 갖추었어요. 저는 항상 호기심이 충만하며 새로운 것들을 배우는 데에 관심이 많습니다.
             </p>
 
             <div className="text-center md:text-right mt-2">
@@ -90,7 +89,7 @@ function IndexPage({location}) {
 
       <Section>
         <h2 className="text-purple-700 text-4xl font-bold" id="projects">
-          Projects - 프로젝트
+          Projects
         </h2>
         <p className="leading-loose p-3">This is a list of the major projects I worked on by myself or with a team</p>
 
@@ -134,7 +133,7 @@ function IndexPage({location}) {
 
       <Section>
         <h2 className="text-purple-700 text-4xl font-bold" id="contact">
-          Contact - 연락처
+          Contact
         </h2>
         <p className="leading-loose p-3">You can contact me by sending me an email at
           <strong className="font-bold"> neginoyami@gmail.com</strong> or by messaging me on my LinkedIn account</p>
