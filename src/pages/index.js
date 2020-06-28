@@ -101,7 +101,7 @@ function IndexPage({location}) {
                 desc={"Web platform helping developers and local companies to be in contact with each others."}
                 stack={["React", "Express", "MongoDB"]}/>
           <Card img={TL} title={"Tomorrow Learning"} website="https://tomorrowlearning.fr/"
-                desc={"Tomorrow Learning is an online training organization which trains companies in Growth Hacking and Human Resources."}
+                desc={"Tomorrow Learning is an online training organization which trains companies in Growth Hacking and Human Resources. I made the first version of the website, it is now running on wordpress."}
                 stack={["React", "Gatsby", "TailwindCSS"]}/>
           <Card img={Portfolio} title={"My portfolio"} github="https://github.com/Shiroi-shi/my-portfolio"
                 website="https://aurelientoussaint.me"
